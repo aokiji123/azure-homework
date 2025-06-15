@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "4XIvsP2Uu/0=",
+  "success": true,
+  "projectFilePath": "/Users/mac/Desktop/projects/azure-homework/03-homework/03-homework/03-homework.csproj",
+  "expectedPackageFiles": [
+    "/Users/mac/.nuget/packages/microsoft.extensions.configuration/10.0.0-preview.5.25277.114/microsoft.extensions.configuration.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.extensions.configuration.abstractions/10.0.0-preview.5.25277.114/microsoft.extensions.configuration.abstractions.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.extensions.configuration.binder/10.0.0-preview.5.25277.114/microsoft.extensions.configuration.binder.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.extensions.configuration.fileextensions/10.0.0-preview.5.25277.114/microsoft.extensions.configuration.fileextensions.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.extensions.configuration.json/10.0.0-preview.5.25277.114/microsoft.extensions.configuration.json.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.extensions.fileproviders.abstractions/10.0.0-preview.5.25277.114/microsoft.extensions.fileproviders.abstractions.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.extensions.fileproviders.physical/10.0.0-preview.5.25277.114/microsoft.extensions.fileproviders.physical.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.extensions.filesystemglobbing/10.0.0-preview.5.25277.114/microsoft.extensions.filesystemglobbing.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.extensions.primitives/10.0.0-preview.5.25277.114/microsoft.extensions.primitives.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.io.pipelines/10.0.0-preview.5.25277.114/system.io.pipelines.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.text.encodings.web/10.0.0-preview.5.25277.114/system.text.encodings.web.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.text.json/10.0.0-preview.5.25277.114/system.text.json.10.0.0-preview.5.25277.114.nupkg.sha512"
+  ],
+  "logs": []
+}
