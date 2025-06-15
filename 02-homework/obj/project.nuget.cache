@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "2ETyGuq1g4k=",
+  "success": true,
+  "projectFilePath": "/Users/mac/Desktop/projects/azure-homework/02-homework/02-homework.csproj",
+  "expectedPackageFiles": [
+    "/Users/mac/.nuget/packages/azure.core/1.44.1/azure.core.1.44.1.nupkg.sha512",
+    "/Users/mac/.nuget/packages/azure.data.tables/12.11.0/azure.data.tables.12.11.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/azure.storage.blobs/12.24.1/azure.storage.blobs.12.24.1.nupkg.sha512",
+    "/Users/mac/.nuget/packages/azure.storage.common/12.23.0/azure.storage.common.12.23.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/azure.storage.queues/12.22.0/azure.storage.queues.12.22.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.clientmodel/1.1.0/system.clientmodel.1.1.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.io.hashing/6.0.0/system.io.hashing.6.0.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.memory.data/6.0.1/system.memory.data.6.0.1.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.text.json/6.0.10/system.text.json.6.0.10.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

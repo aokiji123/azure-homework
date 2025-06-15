@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "09XN/H7/vSU=",
+  "success": true,
+  "projectFilePath": "/Users/mac/Desktop/projects/azure-homework/02-homework/02-homework/02-homework.csproj",
+  "expectedPackageFiles": [
+    "/Users/mac/.nuget/packages/azure.core/1.46.2/azure.core.1.46.2.nupkg.sha512",
+    "/Users/mac/.nuget/packages/azure.data.tables/12.11.0/azure.data.tables.12.11.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/azure.storage.blobs/12.26.0-beta.1/azure.storage.blobs.12.26.0-beta.1.nupkg.sha512",
+    "/Users/mac/.nuget/packages/azure.storage.common/12.25.0-beta.1/azure.storage.common.12.25.0-beta.1.nupkg.sha512",
+    "/Users/mac/.nuget/packages/azure.storage.queues/12.24.0-beta.1/azure.storage.queues.12.24.0-beta.1.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.bcl.asyncinterfaces/8.0.0/microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.3/microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.clientmodel/1.4.2/system.clientmodel.1.4.2.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.io.hashing/8.0.0/system.io.hashing.8.0.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/system.memory.data/6.0.1/system.memory.data.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
