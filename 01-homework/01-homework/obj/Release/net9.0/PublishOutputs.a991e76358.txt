@@ -1,0 +1,7 @@
+/var/folders/dr/qs35cm617l9c168hvfg501km0000gn/T/rider-publish13769515936659013083/01-homework
+/var/folders/dr/qs35cm617l9c168hvfg501km0000gn/T/rider-publish13769515936659013083/appsettings.Development.json
+/var/folders/dr/qs35cm617l9c168hvfg501km0000gn/T/rider-publish13769515936659013083/appsettings.json
+/var/folders/dr/qs35cm617l9c168hvfg501km0000gn/T/rider-publish13769515936659013083/01-homework.dll
+/var/folders/dr/qs35cm617l9c168hvfg501km0000gn/T/rider-publish13769515936659013083/01-homework.deps.json
+/var/folders/dr/qs35cm617l9c168hvfg501km0000gn/T/rider-publish13769515936659013083/01-homework.runtimeconfig.json
+/var/folders/dr/qs35cm617l9c168hvfg501km0000gn/T/rider-publish13769515936659013083/01-homework.pdb

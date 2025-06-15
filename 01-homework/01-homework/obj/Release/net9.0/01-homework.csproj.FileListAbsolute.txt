@@ -90,3 +90,4 @@
 /Users/mac/Desktop/projects/azure-homework/01-homework/01-homework/obj/Release/net9.0/01-homework.pdb
 /Users/mac/Desktop/projects/azure-homework/01-homework/01-homework/obj/Release/net9.0/01-homework.genruntimeconfig.cache
 /Users/mac/Desktop/projects/azure-homework/01-homework/01-homework/obj/Release/net9.0/ref/01-homework.dll
+/Users/mac/Desktop/projects/azure-homework/01-homework/01-homework/obj/Release/net9.0/01-homework.sourcelink.json
