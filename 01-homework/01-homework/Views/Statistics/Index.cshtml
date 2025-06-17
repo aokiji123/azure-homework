@@ -1,0 +1,189 @@
+@using _01_homework.Controllers
+@model StatisticsViewModel
+
+@{
+    ViewData["Title"] = "Student Statistics";
+}
+
+<h1>Student Statistics</h1>
+
+<!-- Total Students Summary -->
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <h2 class="card-title">📊 Total Students: @Model.TotalStudents</h2>
+                <p class="card-text">Complete overview of student enrollment and performance</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Students by Courses -->
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h3>👥 Students by Courses</h3>
+            </div>
+            <div class="card-body">
+                @if (Model.StudentsByCourses.Any())
+                {
+                    @foreach (var courseStats in Model.StudentsByCourses.OrderByDescending(c => c.StudentCount))
+                    {
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="mb-0">
+                                    @courseStats.Course.Title 
+                                    <span class="badge bg-info">@courseStats.Course.CourseCode</span>
+                                </h5>
+                                <span class="badge bg-success">@courseStats.StudentCount Students</span>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><strong>Department:</strong> @courseStats.Course.Department</p>
+                                    <p><strong>Credits:</strong> @courseStats.Course.Credits</p>
+                                </div>
+                                <div class="col-md-6">
+                                    @if (!string.IsNullOrEmpty(courseStats.Course.Description))
+                                    {
+                                        <p><strong>Description:</strong> @courseStats.Course.Description</p>
+                                    }
+                                </div>
+                            </div>
+
+                            @if (courseStats.Students.Any())
+                            {
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Student Name</th>
+                                                <th>Email</th>
+                                                <th>Enrollment Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var student in courseStats.Students.OrderBy(s => s.LastName))
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        <a asp-controller="Students" asp-action="Details" asp-route-id="@student.StudentId">
+                                                            @student.FullName
+                                                        </a>
+                                                    </td>
+                                                    <td>@student.Email</td>
+                                                    <td>@student.EnrollmentDate.ToShortDateString()</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            }
+                            else
+                            {
+                                <p class="text-muted">No students enrolled in this course.</p>
+                            }
+                        </div>
+                        <hr/>
+                    }
+                }
+                else
+                {
+                    <p class="text-muted">No course data available.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- High Performing Students (Grades > 90) -->
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <h3>🌟 High Performing Students (Grades > 90)</h3>
+                <p class="mb-0">Students with excellent academic performance (Grade A equivalent)</p>
+            </div>
+            <div class="card-body">
+                @if (Model.UniqueHighPerformingStudents.Any())
+                {
+                    <div class="alert alert-info">
+                        <strong>Grade Scale:</strong> A = 95, B = 85, C = 75, D = 65, F = 50 (0-100 scale)
+                    </div>
+
+                    <div class="row">
+                        @foreach (var studentPerf in Model.UniqueHighPerformingStudents.OrderByDescending(s => s.AverageGrade))
+                        {
+                            <div class="col-md-6 mb-3">
+                                <div class="card border-success">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <a asp-controller="Students" asp-action="Details" asp-route-id="@studentPerf.Student.StudentId">
+                                                @studentPerf.Student.FullName
+                                            </a>
+                                            <span class="badge bg-success">Avg: @studentPerf.AverageGrade.ToString("F1")</span>
+                                        </h5>
+                                        <p class="card-text">
+                                            <strong>Email:</strong> @studentPerf.Student.Email<br/>
+                                            <strong>Student Since:</strong> @studentPerf.Student.EnrollmentDate.ToShortDateString()
+                                        </p>
+                                        
+                                        <h6>High-Grade Courses:</h6>
+                                        <ul class="list-unstyled">
+                                            @foreach (var enrollment in studentPerf.HighGradeEnrollments)
+                                            {
+                                                <li>
+                                                    <span class="badge bg-primary">@enrollment.Grade</span>
+                                                    <a asp-controller="Courses" asp-action="Details" asp-route-id="@enrollment.CourseId">
+                                                        @enrollment.Course.Title
+                                                    </a>
+                                                </li>
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-warning">
+                        <h5>No High Performing Students</h5>
+                        <p>Currently, no students have grades higher than 90 (Grade A equivalent).</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Summary Statistics -->
+<div class="row">
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h2 class="text-primary">@Model.StudentsByCourses.Count</h2>
+                <p>Total Courses</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h2 class="text-success">@Model.UniqueHighPerformingStudents.Count</h2>
+                <p>High Performers</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h2 class="text-info">@(Model.StudentsByCourses.Sum(c => c.StudentCount))</h2>
+                <p>Total Enrollments</p>
+            </div>
+        </div>
+    </div>
+</div> 
